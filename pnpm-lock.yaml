@@ -8,6 +8,9 @@ dependencies:
   '@nextui-org/react':
     specifier: ^2.1.7
     version: 2.1.7(@types/react@18.2.21)(framer-motion@10.16.1)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.3.3)
+  '@react-stately/data':
+    specifier: ^3.10.3
+    version: 3.10.3(react@18.2.0)
   '@types/node':
     specifier: 20.5.7
     version: 20.5.7
@@ -1870,6 +1873,16 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-stately/data@3.10.3(react@18.2.0):
+    resolution: {integrity: sha512-cC9mxCZU4N9GbdOB4g2/J8+W+860GvBd874to0ObSc/XOR4VbuIsxAFIabW5UwmJV+XaqqK4TUBG0C6YScXeWQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.21.0(react@18.2.0)
+      '@swc/helpers': 0.5.1
+      react: 18.2.0
+    dev: false
+
   /@react-stately/flags@3.0.0:
     resolution: {integrity: sha512-e3i2ItHbIa0eEwmSXAnPdD7K8syW76JjGe8ENxwFJPW/H1Pu9RJfjkCb/Mq0WSPN/TpxBb54+I9TgrGhbCoZ9w==}
     dependencies:
@@ -2159,6 +2172,14 @@ packages:
 
   /@react-types/shared@3.19.0(react@18.2.0):
     resolution: {integrity: sha512-h852l8bWhqUxbXIG8vH3ab7gE19nnP3U1kuWf6SNSMvgmqjiRN9jXKPIFxF/PbfdvnXXm0yZSgSMWfUCARF0Cg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@react-types/shared@3.21.0(react@18.2.0):
+    resolution: {integrity: sha512-wJA2cUF8dP4LkuNUt9Vh2kkfiQb2NLnV2pPXxVnKJZ7d4x2/7VPccN+LYPnH8m0X3+rt50cxWuPKQmjxSsCFOg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
