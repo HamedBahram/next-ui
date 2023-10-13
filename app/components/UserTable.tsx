@@ -31,7 +31,7 @@ export default function UserTable({ users }: { users: User[] }) {
     }
 
     return filteredUsers
-  }, [users, filterValue])
+  }, [users, filterValue, hasSearchFilter])
 
   const rowsPerPage = 8
   const [page, setPage] = useState(1)
@@ -89,7 +89,7 @@ export default function UserTable({ users }: { users: User[] }) {
         </div>
       </div>
     )
-  }, [filterValue, onSearchChange, users.length, hasSearchFilter])
+  }, [filterValue, onSearchChange, onClear])
 
   return (
     <Table
